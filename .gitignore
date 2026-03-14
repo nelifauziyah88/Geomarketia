@@ -1,0 +1,14 @@
+# NEXT JS
+frontend/node_modules
+frontend/.next
+frontend/.env
+
+# LARAVEL
+backend/vendor
+backend/node_modules
+backend/.env
+backend/storage/*.key
+
+# SYSTEM
+.DS_Store
+Thumbs.db
