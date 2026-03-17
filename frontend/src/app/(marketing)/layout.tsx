@@ -9,7 +9,7 @@ export default function MarketingLayout({
   return (
     <>
       <Navbar />
-      {children} {/* 🔥 WAJIB ADA */}
+      {children} 
       <Footer />
     </>
   );
