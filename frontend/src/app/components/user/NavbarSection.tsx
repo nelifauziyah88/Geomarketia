@@ -117,7 +117,7 @@ export default function Navbar() {
           }}
         >
           <Link
-            href="/"
+            href="/about"
             onClick={() => setActive("Home")}
             style={{
               display: "flex",
