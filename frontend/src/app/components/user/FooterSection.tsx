@@ -572,7 +572,7 @@ export default function Footer() {
           <FootLink href="/">Home</FootLink>
           <FootLink href="/about">About Us</FootLink>
           <FootLink href="/products">Products &amp; Services</FootLink>
-          <FootLink href="/reviews">Reviews</FootLink>
+          <FootLink href="/review">Reviews</FootLink>
           <FootLink href="/contact">Contact</FootLink>
         </div>
 
