@@ -230,6 +230,9 @@ export default function ContactSection() {
           border-radius: 2px;
           opacity: 0.3;
         }
+        .heading-accent {
+          position: relative;
+        }
         .heading-blue {
         color: #1A56DB;
         }
