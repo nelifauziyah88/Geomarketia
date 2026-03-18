@@ -5,7 +5,6 @@ import Link from "next/link";
 import ContactSection from "../../components/user/ContactSection";
 import CTASection from "../../components/user/CTASection";
 
-/* ─── CLUSTER MAP VISUAL ─────────────────────────── */
 function ClusterMapVisual() {
   return (
     <div style={{ position: "relative", width: "100%", maxWidth: 500, height: 460, margin: "0 auto" }}>
@@ -26,7 +25,6 @@ function ClusterMapVisual() {
           <line x1="273" y1="70" x2="304" y2="218" stroke="#8B5CF6" strokeWidth="1" strokeDasharray="3 4" opacity="0.3"/>
           <line x1="94" y1="208" x2="62" y2="70" stroke="#0EA5E9" strokeWidth="1" strokeDasharray="3 4" opacity="0.3"/>
         </svg>
-        {/* Cluster A */}
         <div style={{ position:"absolute", left:"44%", top:"30%", transform:"translate(-50%,-50%)", animation:"gmClusterFloat 3s 0s ease-in-out infinite", zIndex:4 }}>
           <div style={{ position:"relative", display:"flex", flexDirection:"column", alignItems:"center" }}>
             <div style={{ position:"absolute", width:72, height:72, borderRadius:"50%", background:"radial-gradient(circle,rgba(37,99,235,0.3) 0%,transparent 70%)", top:-14, left:-14, pointerEvents:"none" }}/>
@@ -35,7 +33,6 @@ function ClusterMapVisual() {
             <div style={{ position:"absolute", width:56, height:56, borderRadius:"50%", border:"1.5px solid rgba(37,99,235,0.5)", top:-6, left:-6, animation:"gmRingOut 2s 0s infinite" }}/>
           </div>
         </div>
-        {/* Cluster B */}
         <div style={{ position:"absolute", left:"70%", top:"22%", transform:"translate(-50%,-50%)", animation:"gmClusterFloat 3.2s 0.6s ease-in-out infinite", zIndex:4 }}>
           <div style={{ position:"relative", display:"flex", flexDirection:"column", alignItems:"center" }}>
             <div style={{ position:"absolute", width:56, height:56, borderRadius:"50%", background:"radial-gradient(circle,rgba(139,92,246,0.25) 0%,transparent 70%)", top:-10, left:-10, pointerEvents:"none" }}/>
@@ -44,7 +41,6 @@ function ClusterMapVisual() {
             <div style={{ position:"absolute", width:46, height:46, borderRadius:"50%", border:"1.5px solid rgba(139,92,246,0.5)", top:-5, left:-5, animation:"gmRingOut 2s 0.6s infinite" }}/>
           </div>
         </div>
-        {/* Cluster C */}
         <div style={{ position:"absolute", left:"24%", top:"65%", transform:"translate(-50%,-50%)", animation:"gmClusterFloat 2.8s 1.1s ease-in-out infinite", zIndex:4 }}>
           <div style={{ position:"relative", display:"flex", flexDirection:"column", alignItems:"center" }}>
             <div style={{ position:"absolute", width:52, height:52, borderRadius:"50%", background:"radial-gradient(circle,rgba(14,165,233,0.25) 0%,transparent 70%)", top:-9, left:-9, pointerEvents:"none" }}/>
@@ -53,7 +49,6 @@ function ClusterMapVisual() {
             <div style={{ position:"absolute", width:44, height:44, borderRadius:"50%", border:"1.5px solid rgba(14,165,233,0.5)", top:-5, left:-5, animation:"gmRingOut 2s 1.1s infinite" }}/>
           </div>
         </div>
-        {/* Cluster D */}
         <div style={{ position:"absolute", left:"78%", top:"68%", transform:"translate(-50%,-50%)", animation:"gmClusterFloat 3.4s 1.7s ease-in-out infinite", zIndex:4 }}>
           <div style={{ position:"relative", display:"flex", flexDirection:"column", alignItems:"center" }}>
             <div style={{ position:"absolute", width:44, height:44, borderRadius:"50%", background:"radial-gradient(circle,rgba(52,211,153,0.25) 0%,transparent 70%)", top:-8, left:-8, pointerEvents:"none" }}/>
@@ -62,7 +57,6 @@ function ClusterMapVisual() {
             <div style={{ position:"absolute", width:36, height:36, borderRadius:"50%", border:"1.5px solid rgba(52,211,153,0.5)", top:-4, left:-4, animation:"gmRingOut 2s 1.7s infinite" }}/>
           </div>
         </div>
-        {/* Cluster E */}
         <div style={{ position:"absolute", left:"16%", top:"22%", transform:"translate(-50%,-50%)", animation:"gmClusterFloat 3s 2.2s ease-in-out infinite", zIndex:4 }}>
           <div style={{ position:"relative", display:"flex", flexDirection:"column", alignItems:"center" }}>
             <div style={{ width:24, height:24, borderRadius:"50%", background:"linear-gradient(135deg,#D97706,#FBBF24)", boxShadow:"0 0 0 2px rgba(251,191,36,0.3),0 3px 10px rgba(251,191,36,0.5)", display:"flex", alignItems:"center", justifyContent:"center", fontFamily:"'Inter',sans-serif", fontSize:9, fontWeight:800, color:"#fff", position:"relative", zIndex:2 }}>3</div>
@@ -70,7 +64,6 @@ function ClusterMapVisual() {
             <div style={{ position:"absolute", width:32, height:32, borderRadius:"50%", border:"1.5px solid rgba(251,191,36,0.5)", top:-4, left:-4, animation:"gmRingOut 2s 2.2s infinite" }}/>
           </div>
         </div>
-        {/* compass */}
         <div style={{ position:"absolute", bottom:12, right:14, opacity:0.35 }}>
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
             <circle cx="14" cy="14" r="12" stroke="#60A5FA" strokeWidth="1"/>
@@ -86,7 +79,6 @@ function ClusterMapVisual() {
           <span style={{ fontFamily:"'Inter',sans-serif", fontSize:8, color:"#93C5FD", fontWeight:600 }}>500m</span>
         </div>
       </div>
-      {/* Location Score */}
       <div style={{ position:"absolute", top:12, right:-4, background:"rgba(8,18,60,0.92)", border:"1px solid rgba(96,165,250,0.3)", borderRadius:14, padding:"12px 16px", backdropFilter:"blur(16px)", WebkitBackdropFilter:"blur(16px)", minWidth:148, zIndex:10, animation:"gmFloatCard 4s 0.4s ease-in-out infinite", boxShadow:"0 8px 32px rgba(0,0,0,0.3)" }}>
         <div style={{ fontFamily:"'Inter',sans-serif", fontSize:9, fontWeight:700, color:"rgba(255,255,255,0.38)", letterSpacing:"0.08em", textTransform:"uppercase" as const, marginBottom:6 }}>Location Score</div>
         <div style={{ display:"flex", alignItems:"baseline", gap:4 }}>
@@ -97,7 +89,6 @@ function ClusterMapVisual() {
           <div style={{ width:"94%", height:"100%", background:"linear-gradient(90deg,#1A56DB,#60A5FA)", borderRadius:4 }}/>
         </div>
       </div>
-      {/* Market Potential */}
       <div style={{ position:"absolute", bottom:58, left:-8, background:"rgba(8,18,60,0.92)", border:"1px solid rgba(52,211,153,0.3)", borderRadius:14, padding:"12px 16px", backdropFilter:"blur(16px)", WebkitBackdropFilter:"blur(16px)", minWidth:152, zIndex:10, animation:"gmFloatCard 4.5s 1s ease-in-out infinite", boxShadow:"0 8px 32px rgba(0,0,0,0.3)" }}>
         <div style={{ fontFamily:"'Inter',sans-serif", fontSize:9, fontWeight:700, color:"rgba(255,255,255,0.38)", letterSpacing:"0.08em", textTransform:"uppercase" as const, marginBottom:8 }}>Market Potential</div>
         {[{ label:"Foot Traffic", val:88, color:"#34D399" },{ label:"Growth Index", val:76, color:"#60A5FA" }].map(m=>(
@@ -112,7 +103,6 @@ function ClusterMapVisual() {
           </div>
         ))}
       </div>
-      {/* Clusters Found */}
       <div style={{ position:"absolute", bottom:10, right:4, background:"rgba(8,18,60,0.92)", border:"1px solid rgba(251,191,36,0.3)", borderRadius:14, padding:"10px 16px", backdropFilter:"blur(16px)", WebkitBackdropFilter:"blur(16px)", minWidth:130, zIndex:10, animation:"gmFloatCard 3.8s 1.6s ease-in-out infinite", boxShadow:"0 8px 32px rgba(0,0,0,0.3)" }}>
         <div style={{ fontFamily:"'Inter',sans-serif", fontSize:9, fontWeight:700, color:"rgba(255,255,255,0.38)", letterSpacing:"0.08em", textTransform:"uppercase" as const, marginBottom:4 }}>Clusters Found</div>
         <div style={{ display:"flex", alignItems:"center", gap:8 }}>
@@ -127,7 +117,6 @@ function ClusterMapVisual() {
   );
 }
 
-/* ─── HERO ───────────────────────────────────────── */
 function HeroAbout() {
   return (
     <section className="gma-hero">
@@ -154,9 +143,7 @@ function HeroAbout() {
               <span style={{ background:"linear-gradient(90deg,#60A5FA,#34D399)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", backgroundClip:"text" }}>Smarter Business Decisions</span>
             </h1>
             <p style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16, color:"rgba(255,255,255,0.55)", lineHeight:1.78, maxWidth:460, marginBottom:34 }}>
-              Geomarketia is a geospatial market analysis platform that helps you understand
-              business potential in a specific location through accurate data and interactive
-              visualization. We turn data into insights so you can make decisions with confidence.
+              Geomarketia is a geospatial platform that helps you analyze location potential through data and visualization, turning insights into confident decisions.
             </p>
           </div>
           <div style={{ animation:"gmFadeUp 0.8s 0.2s ease both", position:"relative", zIndex:2 }}>
@@ -168,13 +155,11 @@ function HeroAbout() {
   );
 }
 
-/* ─── VISION MISSION ─────────────────────────────── */
 function useSlideIn(direction: "left" | "right", delay = 0) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    // set initial state
     el.style.opacity = "0";
     el.style.transform = direction === "left" ? "translateX(-64px)" : "translateX(64px)";
     el.style.transition = `opacity 0.75s cubic-bezier(.22,1,.36,1) ${delay}s, transform 0.75s cubic-bezier(.22,1,.36,1) ${delay}s`;
@@ -202,8 +187,8 @@ function VisionMission() {
   const missionContent= useSlideIn("right", 0.1);
 
   const missionItems = [
-    "Provide accessible and easy-to-understand market analysis",
-    "Help businesses make data-driven decisions",
+    "Provide accessible and easy to understand market analysis",
+    "Help businesses make data driven decisions",
     "Integrate AI technology to enhance insight accuracy",
   ];
 
@@ -211,9 +196,7 @@ function VisionMission() {
     <section className="vm-section">
       <div className="vm-container">
 
-        {/* ── VISION ROW ── */}
         <div className="vm-row">
-          {/* label — from left */}
           <div ref={visionLabel} className="vm-label-col">
             <div className="vm-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A56DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -224,7 +207,6 @@ function VisionMission() {
             <div className="vm-label-bar" />
           </div>
 
-          {/* content — from right */}
           <div ref={visionContent} className="vm-content-col">
             <div className="vm-card">
               <div className="vm-card-accent" />
@@ -238,9 +220,7 @@ function VisionMission() {
 
         <div className="vm-divider" />
 
-        {/* ── MISSION ROW ── */}
         <div className="vm-row">
-          {/* label — from left */}
           <div ref={missionLabel} className="vm-label-col">
             <div className="vm-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A56DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -251,7 +231,6 @@ function VisionMission() {
             <div className="vm-label-bar" />
           </div>
 
-          {/* content — from right */}
           <div ref={missionContent} className="vm-content-col">
             <div className="vm-card">
               <div className="vm-card-accent" />
@@ -276,7 +255,6 @@ function VisionMission() {
   );
 }
 
-/* ─── WHAT WE DO ─────────────────────────────────── */
 function WdCard({ item, delay }: { item: { icon: React.ReactNode; title: string; desc: string }; delay: number }) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -309,22 +287,22 @@ function WhatWeDo() {
     {
       icon: <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A56DB" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><circle cx="11" cy="11" r="3"/></svg>,
       title: "Location Intelligence",
-      desc: "Pinpoint optimal business locations using layered geospatial data, foot traffic signals, and proximity analysis.",
+      desc: "Identify the best business locations using geospatial data, traffic patterns, and proximity insights.",
     },
     {
       icon: <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A56DB" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>,
-      title: "Market Insights",
-      desc: "Understand demand patterns, competitor distribution, and growth potential across any geographic market.",
+      title: "Competitor Analysis",
+      desc: "Analyze competitor distribution and understand how they influence your target market.",
     },
     {
       icon: <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A56DB" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><path d="M18 2v4h4"/></svg>,
-      title: "AI-Powered Analysis",
-      desc: "Machine learning models score and rank locations, forecast trends, and surface insights you'd otherwise miss.",
+      title: "Market Insights",
+      desc: "Explore demand patterns, growth potential, and market opportunities across locations.",
     },
     {
       icon: <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A56DB" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>,
-      title: "Interactive Data Visualization",
-      desc: "Explore live maps, cluster overlays, and dynamic dashboards that make complex spatial data instantly readable.",
+      title: "AI Market Solutions",
+      desc: "Leverage AI to score locations, predict trends, and uncover hidden insights.",
     },
   ];
   return (
@@ -333,7 +311,7 @@ function WhatWeDo() {
         <div ref={titleRef} className="wd-header">
           <span className="wd-eyebrow">What We Do</span>
           <h2 className="wd-title">Advanced Geospatial Analytics</h2>
-          <p className="wd-sub">Geomarketia provides advanced geospatial analytics to help businesses identify strategic locations, analyze competitors, and understand market trends.</p>
+          <p className="wd-sub">Geomarketia helps businesses analyze locations, understand markets, and make smarter decisions using geospatial data.</p>
         </div>
         <div className="wd-grid">
           {wdItems.map((item, i) => <WdCard key={i} item={item} delay={i * 0.1} />)}
@@ -343,7 +321,6 @@ function WhatWeDo() {
   );
 }
 
-/* ─── WHY CHOOSE ─────────────────────────────────── */
 function WcCard({ item, delay }: { item: { num: string; title: string; desc: string; icon: React.ReactNode }; delay: number }) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -375,32 +352,31 @@ function WhyChoose() {
   const wcItems = [
     {
       num: "01",
-      title: "Data-Driven Decision Making",
-      desc: "Replace guesswork with evidence. Every recommendation is backed by real geospatial and market data.",
+      title: "Data Driven Decisions",
+      desc: "Replace guesswork with real data. Every recommendation is backed by reliable geospatial and market insights.",
       icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>,
     },
     {
       num: "02",
       title: "Accurate & Real-Time Insights",
-      desc: "Live data feeds keep your analysis current — no stale reports, no outdated market snapshots.",
+      desc: "Stay up to date with live data, no outdated reports, just current and relevant analysis.",
       icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>,
     },
     {
       num: "03",
-      title: "User-Friendly Visualization",
-      desc: "Interactive maps and intuitive dashboards make complex spatial insights accessible to any team.",
+      title: "User Friendly Visualization",
+      desc: "Interactive maps and intuitive dashboards make complex data easy to understand and act on.",
       icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>,
     },
     {
       num: "04",
-      title: "Scalable for Various Industries",
-      desc: "From retail and F&B to healthcare and logistics — our platform adapts to any sector's spatial needs.",
+      title: "Scalable for Any Industry",
+      desc: "From retail and F&B to healthcare, our platform adapts to your business needs.",
       icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>,
     },
   ];
   return (
     <section className="wc-section">
-      {/* animated curved lines background */}
       <svg className="wc-bg-svg" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M-100 420 Q360 80 720 300 Q1080 520 1540 180"  stroke="#1A56DB" strokeWidth="1.5" strokeOpacity="0.13" className="wc-curve wc-curve-1"/>
         <path d="M-100 320 Q300 560 720 220 Q1140 -80 1540 300" stroke="#1A56DB" strokeWidth="1"   strokeOpacity="0.09" className="wc-curve wc-curve-2"/>
@@ -422,7 +398,6 @@ function WhyChoose() {
   );
 }
 
-/* ─── PAGE ROOT ──────────────────────────────────── */
 export default function AboutPage() {
   return (
     <>
