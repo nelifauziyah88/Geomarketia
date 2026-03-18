@@ -17,7 +17,8 @@ export default function ContactSection() {
           </span>
 
           <h2 className="heading">
-            Contact <span className="heading-accent">Our Team</span>
+            <span className="heading-blue">Contact</span>{" "}
+            <span className="heading-accent">Our Team</span>
           </h2>
 
           <p className="desc">
@@ -90,8 +91,14 @@ export default function ContactSection() {
             </div>
 
             <div className="float-bubble float-bubble-1">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#1A56DB" aria-hidden="true">
-                <path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.59 5.97L0 24l6.22-1.57A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.22-3.48-8.52z"/>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="#1A56DB"
+                aria-hidden="true"
+              >
+                <path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.59 5.97L0 24l6.22-1.57A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.22-3.48-8.52z" />
               </svg>
               <span>Online now</span>
             </div>
@@ -112,7 +119,7 @@ export default function ContactSection() {
           background: #ffffff;
           position: relative;
           overflow: hidden;
-          padding: 80px 40px;
+          padding: 150px 150px;
           min-height: 420px;
           display: flex;
           align-items: center;
@@ -208,8 +215,9 @@ export default function ContactSection() {
           letter-spacing: -0.02em;
         }
         .heading-accent {
-          color: #1A56DB;
-          position: relative;
+          background: linear-gradient(90deg, #60A5FA, #34D399);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
         .heading-accent::after {
           content: '';
@@ -221,6 +229,9 @@ export default function ContactSection() {
           background: #1A56DB;
           border-radius: 2px;
           opacity: 0.3;
+        }
+        .heading-blue {
+        color: #1A56DB;
         }
 
         .desc {

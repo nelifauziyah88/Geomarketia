@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const C = {
   blue: "#1A56DB",
@@ -71,8 +72,7 @@ function CubeIcon({ size = 32 }: { size?: number }) {
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [active, setActive] = useState("Home");
-
+  const pathname = usePathname();
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 12);
     window.addEventListener("scroll", fn, { passive: true });
@@ -118,7 +118,6 @@ export default function Navbar() {
         >
           <Link
             href="/about"
-            onClick={() => setActive("Home")}
             style={{
               display: "flex",
               alignItems: "center",
@@ -156,12 +155,11 @@ export default function Navbar() {
             }}
           >
             {navLinks.map(({ label, href }) => {
-              const on = active === label;
+              const on = pathname === href;
               return (
                 <Link
                   key={label}
                   href={href}
-                  onClick={() => setActive(label)}
                   style={{
                     padding: "6px 14px",
                     borderRadius: 7,
@@ -303,15 +301,11 @@ export default function Navbar() {
             }}
           >
             {navLinks.map(({ label, href }) => {
-              const on = active === label;
+              const on = pathname === href;
               return (
                 <Link
                   key={label}
                   href={href}
-                  onClick={() => {
-                    setActive(label);
-                    setMenuOpen(false);
-                  }}
                   style={{
                     display: "block",
                     padding: "10px 14px",
