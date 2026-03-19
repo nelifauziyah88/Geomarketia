@@ -912,7 +912,7 @@ const challenges = [
     problem: "Unclear Impact of Location Factors on Store Performance",
     solutionLabel: "Spatial Correlation Analysis",
     solutionText:
-      "Understand how geographic and environmental factors influence your business performance. Geomarketia analyzes relationships between store success and variables such as competitor proximity, accessibility, traffic flow, and local demographics—helping you uncover patterns and make smarter strategic decisions.",
+      "Understand how geographic and environmental factors influence your business performance. Geomarketia analyzes relationships between store success and variables such as competitor proximity, accessibility, traffic flow, and local demographics helping you uncover patterns and make smarter strategic decisions.",
     accentColor: "#7C3AED",
     accentBg: "#F5F3FF",
     accentBorder: "#DDD6FE",

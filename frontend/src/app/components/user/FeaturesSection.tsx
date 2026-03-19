@@ -534,25 +534,25 @@ const content: Record<TabId, TabContent> = {
   location: {
     title: "Location Intelligence",
     desc: "Make smarter location decisions by understanding the potential of each area through geospatial data and location-based insights.",
-    href: "/products/location-intelligence",
+    href: "/products/location",
     visual: <LocationVisual />,
   },
   competitor: {
     title: "Competitor Analysis",
     desc: "Understand your competitive landscape by exploring where competitors are located and how they influence the surrounding market.",
-    href: "/products/competitor-analysis",
+    href: "/products/competitor",
     visual: <CompetitorVisual />,
   },
   market: {
     title: "Market Insights",
     desc: "Explore market patterns and customer demand to better understand which areas offer the best business opportunities.",
-    href: "/products/market-insights",
+    href: "/products/market",
     visual: <MarketVisual />,
   },
   ai: {
     title: "AI Market Solutions",
     desc: "Transform complex geospatial data into actionable insights with AI-driven market analysis.",
-    href: "/products/ai-market-solutions",
+    href: "/products/ai",
     visual: <AIVisual />,
   },
 };

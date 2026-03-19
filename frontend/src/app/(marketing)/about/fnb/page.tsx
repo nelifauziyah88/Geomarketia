@@ -282,7 +282,7 @@ function useSlideIn(direction: "left" | "right", delay = 0) {
 
 const challenges = [
     {
-      problem: "Struggling to Identify High-Potential Locations",
+      problem: "Struggling to Identify High Potential Locations",
       solutionLabel: "Find the Optimal Location",
       solutionText:
         "Leverage data-driven insights to identify the most promising locations by analyzing demographics, accessibility, competition, and economic activity ensuring every expansion decision is strategic and profitable.",
@@ -419,10 +419,10 @@ export default function FnbPage() {
               <span style={{ fontFamily:"'Inter',sans-serif", fontSize:11, fontWeight:600, color:"#93C5FD", letterSpacing:"0.07em", textTransform:"uppercase" as const }}>Food & Beverage</span>
             </div>
 
-            <h1 style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:"clamp(2rem,3.4vw,3.3rem)", lineHeight:1.1, color:"#ffffff", marginBottom:18, letterSpacing:"-0.03em" }}>
-              Grow Your F&B Business{" "}
-              <span style={{ background:"linear-gradient(90deg, #60A5FA, #34D399)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>Smarter</span>
-              <br/>with Geospatial Intelligence
+            <h1 style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:"clamp(1.8rem,3.4vw,3.3rem)", lineHeight:1.1, color:"#ffffff", marginBottom:18, letterSpacing:"-0.03em" }}>
+              Grow Your Food & Beverage Business{" "}
+              <span style={{ background:"linear-gradient(90deg, #60A5FA, #34D399)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>Smarter</span> {" "}
+              with Geospatial Intelligence
             </h1>
 
             <p style={{ fontFamily:"'Inter',sans-serif", fontSize:"0.95rem", lineHeight:1.78, color:"rgba(255,255,255,0.55)", marginBottom:36, maxWidth:460 }}>

@@ -1025,7 +1025,7 @@ function IlloCompetitorAnalysis() {
         fill="#6b7280"
         fontFamily="sans-serif"
       >
-        Jl. Imam Bonjol, Tangerang
+        Jl. Imam Bonjol, Batu Aji
       </text>
       <text
         x="302"
@@ -1109,23 +1109,23 @@ function IlloMarketInsights() {
           true,
         ],
         [
-          "Bank and Financial Jabodetabek",
+          "Bank and Financial Tiban",
           "Bank and financial POIs dataset on year 2025",
           false,
         ],
         [
-          "Commercial and Property Jabodetabek",
+          "Commercial and Property Tiban",
           "Commercial and Property POIs dataset on year 2025",
           false,
         ],
         [
-          "Commercial and Property Jakarta",
+          "Commercial and Property Baloi",
           "Commercial and Property POIs dataset on year 2025",
           false,
         ],
         ["Education 2025", "Education POIs dataset on year 2025", false],
         [
-          "Education Jabodetabek Area 2025",
+          "Education Tiban Area 2025",
           "Education POIs dataset on year 2025",
           false,
         ],
@@ -1507,7 +1507,7 @@ function IlloAIMarketSolutions() {
       <text x="48" y="297" fontSize="10" fill="#374151" fontFamily="sans-serif">
         Best location:{" "}
         <tspan fontWeight="700" fill="#1A56DB">
-          Cikini, Jakarta Pusat
+          Piayu, Batam
         </tspan>
         <tspan fill="#6b7280"> — Score: </tspan>
         <tspan fontWeight="700" fill="#34D399">

@@ -193,9 +193,9 @@ function useSlideIn(direction: "left" | "right", delay = 0) {
 
 const challenges = [
   {
-    problem: "Difficulty Identifying High-Potential Facility Locations",
+    problem: "Difficulty Identifying High Potential Facility Locations",
     solutionLabel: "Facility Location Intelligence",
-    solutionText: "Identify high-potential locations for new healthcare facilities by analyzing population distribution, accessibility, visibility, and surrounding infrastructure. Geomarketia ensures new facilities are placed where demand is highest and services are most needed — reducing underserved gaps across communities.",
+    solutionText: "Identify high potential locations for new healthcare facilities by analyzing population distribution, accessibility, visibility, and surrounding infrastructure. Geomarketia ensures new facilities are placed where demand is highest and services are most needed reducing underserved gaps across communities.",
     accentColor: "#1A56DB", accentBg: "#EFF6FF", accentBorder: "#BFDBFE",
     icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#1A56DB"/><circle cx="12" cy="9" r="3" fill="white" opacity="0.9"/></svg>),
   },
@@ -255,8 +255,8 @@ export default function HealthcarePage() {
             </div>
             <h1 style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:"clamp(2rem,3.4vw,3.3rem)", lineHeight:1.1, color:"#ffffff", marginBottom:18, letterSpacing:"-0.03em" }}>
               Improve Healthcare{" "}
-              <span style={{ background:"linear-gradient(90deg, #60A5FA, #34D399)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>Access</span>
-              <br/>Across Every Community
+              <span style={{ background:"linear-gradient(90deg, #60A5FA, #34D399)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>Access</span> {" "}
+              Across Every Community
             </h1>
             <p style={{ fontFamily:"'Inter',sans-serif", fontSize:"0.95rem", lineHeight:1.78, color:"rgba(255,255,255,0.55)", marginBottom:36, maxWidth:460 }}>
               Geomarketia helps healthcare organizations plan smarter facilities, optimize health campaigns, and support public health decisions through accurate geospatial data and interactive visualization.
