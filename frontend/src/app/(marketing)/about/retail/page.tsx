@@ -668,7 +668,7 @@ function RetailStoreIcon() {
             fontSize="8"
             fontWeight="600"
             fill="rgba(255,255,255,0.38)"
-            fontFamily="'Sora',sans-serif"
+            fontFamily="'Inter',sans-serif"
             letterSpacing="0.06em"
           >
             FOOT TRAFFIC
@@ -679,7 +679,7 @@ function RetailStoreIcon() {
             fontSize="17"
             fontWeight="700"
             fill="#60A5FA"
-            fontFamily="'Sora',sans-serif"
+            fontFamily="'Inter',sans-serif"
           >
             2,840
           </text>
@@ -689,7 +689,7 @@ function RetailStoreIcon() {
             fontSize="9"
             fontWeight="700"
             fill="#34D399"
-            fontFamily="'Sora',sans-serif"
+            fontFamily="'Inter',sans-serif"
           >
             ↑18%
           </text>
@@ -711,7 +711,7 @@ function RetailStoreIcon() {
             fontSize="8"
             fontWeight="600"
             fill="rgba(255,255,255,0.38)"
-            fontFamily="'Sora',sans-serif"
+            fontFamily="'Inter',sans-serif"
             letterSpacing="0.06em"
           >
             STORE SCORE
@@ -722,7 +722,7 @@ function RetailStoreIcon() {
             fontSize="17"
             fontWeight="700"
             fill="#34D399"
-            fontFamily="'Sora',sans-serif"
+            fontFamily="'Inter',sans-serif"
           >
             94.2
           </text>
@@ -732,7 +732,7 @@ function RetailStoreIcon() {
             fontSize="9"
             fontWeight="700"
             fill="#60A5FA"
-            fontFamily="'Sora',sans-serif"
+            fontFamily="'Inter',sans-serif"
           >
             A+
           </text>
@@ -754,7 +754,7 @@ function RetailStoreIcon() {
             fontSize="8"
             fontWeight="600"
             fill="rgba(255,255,255,0.38)"
-            fontFamily="'Sora',sans-serif"
+            fontFamily="'Inter',sans-serif"
             letterSpacing="0.06em"
           >
             MONTHLY REVENUE
@@ -765,7 +765,7 @@ function RetailStoreIcon() {
             fontSize="17"
             fontWeight="700"
             fill="#818CF8"
-            fontFamily="'Sora',sans-serif"
+            fontFamily="'Inter',sans-serif"
           >
             IDR 4.2B
           </text>
@@ -775,7 +775,7 @@ function RetailStoreIcon() {
             fontSize="9"
             fontWeight="700"
             fill="#34D399"
-            fontFamily="'Sora',sans-serif"
+            fontFamily="'Inter',sans-serif"
           >
             ↑23%
           </text>
@@ -1072,7 +1072,7 @@ function ChallengeRow({
         </div>
         <p
           style={{
-            fontFamily: "'Sora', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontSize: "0.875rem",
             fontWeight: 600,
             color: "#1E293B",
@@ -1159,7 +1159,7 @@ function ChallengeRow({
           </div>
           <span
             style={{
-              fontFamily: "'Sora', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               fontSize: 11,
               fontWeight: 700,
               color: item.accentColor,
@@ -1173,7 +1173,7 @@ function ChallengeRow({
 
         <p
           style={{
-            fontFamily: "'Sora', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             fontSize: "0.875rem",
             lineHeight: 1.75,
             color: "#475569",
@@ -1191,7 +1191,7 @@ export default function RetailPage() {
   return (
     <main
       style={{
-        fontFamily: "'Sora', system-ui, sans-serif",
+        fontFamily: "'Inter', system-ui, sans-serif",
         overflowX: "hidden",
       }}
     >
@@ -1323,7 +1323,7 @@ export default function RetailPage() {
               />
               <span
                 style={{
-                  fontFamily: "'Sora',system-ui,sans-serif",
+                  fontFamily: "'Inter',system-ui,sans-serif",
                   fontSize: 11,
                   fontWeight: 600,
                   color: "#93C5FD",
@@ -1336,8 +1336,8 @@ export default function RetailPage() {
             </div>
             <h1
               style={{
-                fontFamily: "'Sora',system-ui,sans-serif",
-                fontWeight: 700,
+                fontFamily: "'Inter',system-ui,sans-serif",
+                fontWeight: 600,
                 fontSize: "clamp(2rem,3.4vw,3.3rem)",
                 lineHeight: 1.1,
                 color: "#ffffff",
@@ -1360,7 +1360,7 @@ export default function RetailPage() {
             </h1>
             <p
               style={{
-                fontFamily: "'Sora',system-ui,sans-serif",
+                fontFamily: "'Inter',system-ui,sans-serif",
                 fontSize: "0.95rem",
                 lineHeight: 1.78,
                 color: "rgba(255,255,255,0.55)",
@@ -1473,7 +1473,7 @@ export default function RetailPage() {
               />
               <span
                 style={{
-                  fontFamily: "'Sora',sans-serif",
+                  fontFamily: "'Inter',sans-serif",
                   fontSize: 11,
                   fontWeight: 700,
                   color: "#1A56DB",
@@ -1486,7 +1486,7 @@ export default function RetailPage() {
             </div>
             <h2
               style={{
-                fontFamily: "'Sora',sans-serif",
+                fontFamily: "'Inter',sans-serif",
                 fontWeight: 700,
                 fontSize: "clamp(1.75rem,3vw,2.5rem)",
                 color: "#1A56DB",
@@ -1510,7 +1510,7 @@ export default function RetailPage() {
             </h2>
             <p
               style={{
-                fontFamily: "'Sora',sans-serif",
+                fontFamily: "'Inter',sans-serif",
                 fontSize: "0.95rem",
                 lineHeight: 1.75,
                 color: "#64748B",
@@ -1549,7 +1549,7 @@ export default function RetailPage() {
       <CTASection />
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
         @keyframes gmFloat   { 0%,100%{transform:translateY(0)}   50%{transform:translateY(-10px)} }
         @keyframes gmBlink   { 0%,100%{opacity:0.2;transform:scale(1)} 50%{opacity:1;transform:scale(1.6)} }
