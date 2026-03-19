@@ -274,9 +274,6 @@ function WdCard({ item, delay }: { item: { icon: React.ReactNode; title: string;
       <div className="wd-card-icon-wrap">{item.icon}</div>
       <h3 className="wd-card-title">{item.title}</h3>
       <p className="wd-card-desc">{item.desc}</p>
-      <div className="wd-card-arrow">
-        <svg width="16" height="16" fill="none" stroke="#1A56DB" strokeWidth="2.2" strokeLinecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-      </div>
     </div>
   );
 }
@@ -358,7 +355,7 @@ function WhyChoose() {
     },
     {
       num: "02",
-      title: "Accurate & Real-Time Insights",
+      title: "Accurate & Real Time Insights",
       desc: "Stay up to date with live data, no outdated reports, just current and relevant analysis.",
       icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>,
     },
@@ -543,7 +540,6 @@ export default function AboutPage() {
         .wd-card::after { content:''; position:absolute; inset:0; background:linear-gradient(135deg,rgba(26,86,219,0.04) 0%,transparent 60%); opacity:0; transition:opacity .3s; border-radius:20px; }
         .wd-card:hover { border-color:#93C5FD; box-shadow:0 12px 40px rgba(26,86,219,0.12); transform:translateY(-6px); }
         .wd-card:hover::after { opacity:1; }
-        .wd-card:hover .wd-card-arrow { opacity:1; transform:translateX(0); }
         .wd-card-icon-wrap { width:52px; height:52px; border-radius:14px; background:#EFF6FF; border:1px solid #BFDBFE; display:flex; align-items:center; justify-content:center; margin-bottom:4px; transition:background .25s,border-color .25s; }
         .wd-card:hover .wd-card-icon-wrap { background:#DBEAFE; border-color:#93C5FD; }
         .wd-card-title { font-family:'Inter',sans-serif; font-size:15px; font-weight:700; color:#1A56DB; letter-spacing:-0.01em; line-height:1.3; }

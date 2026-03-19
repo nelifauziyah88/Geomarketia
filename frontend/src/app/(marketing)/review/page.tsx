@@ -1,10 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Navbar from "../../components/user/NavbarSection";
 import ContactSection from "../../components/user/ContactSection";
 import CTASection from "../../components/user/CTASection";
-
 
 interface Review {
   id: number;
@@ -16,7 +14,6 @@ interface Review {
   tag: string;
 }
 
-/* ─── DATA ───────────────────────────────────────── */
 const reviews: Review[] = [
   {
     id: 1,
@@ -41,7 +38,7 @@ const reviews: Review[] = [
     name: "Budi Santoso",
     role: "User",
     company: "Geomarketia",
-    text: "Opening 3 new branches has never been this data-driven. Geomarketia pinpointed the exact zones with the highest foot traffic for our category.",
+    text: "Opening 3 new branches has never been this data driven. Geomarketia pinpointed the exact zones with the highest foot traffic for our category.",
     rating: 5,
     tag: "AI Market Solutions",
   },
@@ -74,9 +71,6 @@ const reviews: Review[] = [
   },
 ];
 
-
-
-
 function useSlideIn(direction: "left" | "right" | "up", delay = 0) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -96,7 +90,7 @@ function useSlideIn(direction: "left" | "right" | "up", delay = 0) {
           observer.unobserve(el);
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -104,7 +98,6 @@ function useSlideIn(direction: "left" | "right" | "up", delay = 0) {
   return ref;
 }
 
-/* ─── STAR RATING ────────────────────────────────── */
 function Stars({ count }: { count: number }) {
   return (
     <div style={{ display: "flex", gap: 2 }}>
@@ -125,7 +118,6 @@ function Stars({ count }: { count: number }) {
   );
 }
 
-
 function HeroVisual() {
   return (
     <div
@@ -137,7 +129,6 @@ function HeroVisual() {
         margin: "0 auto",
       }}
     >
-      {/* Main card */}
       <div
         style={{
           position: "absolute",
@@ -151,7 +142,8 @@ function HeroVisual() {
           padding: "24px 24px 20px",
           backdropFilter: "blur(16px)",
           WebkitBackdropFilter: "blur(16px)",
-          boxShadow: "0 24px 64px rgba(0,0,0,0.4), 0 0 0 1px rgba(37,99,235,0.1)",
+          boxShadow:
+            "0 24px 64px rgba(0,0,0,0.4), 0 0 0 1px rgba(37,99,235,0.1)",
           animation: "rvFloat 3.5s ease-in-out infinite",
           zIndex: 3,
         }}
@@ -252,7 +244,6 @@ function HeroVisual() {
         </div>
       </div>
 
-      {/* Floating stat: Rating */}
       <div
         style={{
           position: "absolute",
@@ -283,9 +274,7 @@ function HeroVisual() {
         >
           Avg. Rating
         </div>
-        <div
-          style={{ display: "flex", alignItems: "baseline", gap: 3 }}
-        >
+        <div style={{ display: "flex", alignItems: "baseline", gap: 3 }}>
           <span
             style={{
               fontFamily: "'Inter',sans-serif",
@@ -309,14 +298,19 @@ function HeroVisual() {
         </div>
         <div style={{ display: "flex", gap: 2, marginTop: 4 }}>
           {[1, 2, 3, 4, 5].map((s) => (
-            <svg key={s} width="10" height="10" viewBox="0 0 24 24" fill="#FBBF24">
+            <svg
+              key={s}
+              width="10"
+              height="10"
+              viewBox="0 0 24 24"
+              fill="#FBBF24"
+            >
               <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
             </svg>
           ))}
         </div>
       </div>
 
-      {/* Floating stat: Total Reviews */}
       <div
         style={{
           position: "absolute",
@@ -383,7 +377,6 @@ function HeroVisual() {
         </div>
       </div>
 
-      
       <div
         style={{
           position: "absolute",
@@ -424,7 +417,6 @@ function HeroVisual() {
         </span>
       </div>
 
-      
       <div
         style={{
           position: "absolute",
@@ -444,11 +436,9 @@ function HeroVisual() {
   );
 }
 
-/* ─── HERO SECTION ───────────────────────────────── */
 function HeroReview() {
   return (
     <section className="rv-hero">
-      
       <div
         style={{
           position: "absolute",
@@ -459,7 +449,7 @@ function HeroReview() {
           pointerEvents: "none",
         }}
       />
-      
+
       <div
         style={{
           position: "absolute",
@@ -474,7 +464,7 @@ function HeroReview() {
           pointerEvents: "none",
         }}
       />
-      
+
       <div
         style={{
           position: "absolute",
@@ -489,7 +479,6 @@ function HeroReview() {
         }}
       />
 
-      
       {[
         { l: "7%", t: "18%", s: 4, d: "0s" },
         { l: "14%", t: "68%", s: 3, d: "0.7s" },
@@ -518,7 +507,6 @@ function HeroReview() {
 
       <div className="rv-container">
         <div className="rv-hero-inner">
-          
           <div
             style={{
               animation: "rvFadeUp 0.8s ease both",
@@ -526,7 +514,6 @@ function HeroReview() {
               zIndex: 2,
             }}
           >
-            
             <div
               style={{
                 display: "inline-flex",
@@ -599,12 +586,9 @@ function HeroReview() {
               }}
             >
               See how Geomarketia helps businesses turn location data into
-              smarter, more confident decisions — straight from the people using
+              smarter, more confident decisions straight from the people using
               it every day.
             </p>
-
-            
-            
           </div>
 
           <div
@@ -622,7 +606,6 @@ function HeroReview() {
   );
 }
 
-/* ─── REVIEW CARD ────────────────────────────────── */
 function ReviewCard({ review, delay }: { review: Review; delay: number }) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -639,7 +622,7 @@ function ReviewCard({ review, delay }: { review: Review; delay: number }) {
           observer.unobserve(el);
         }
       },
-      { threshold: 0.12 }
+      { threshold: 0.12 },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -658,7 +641,6 @@ function ReviewCard({ review, delay }: { review: Review; delay: number }) {
 
   return (
     <div ref={ref} className="rv-card">
-      
       <svg
         width="28"
         height="28"
@@ -670,21 +652,14 @@ function ReviewCard({ review, delay }: { review: Review; delay: number }) {
         <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
       </svg>
 
-      
       <div className="rv-card-tag">{review.tag}</div>
 
-      
       <Stars count={review.rating} />
 
-      
       <p className="rv-card-text">"{review.text}"</p>
 
-      
       <div className="rv-card-author">
-        <div
-          className="rv-card-avatar"
-          style={{ background: gradient }}
-        >
+        <div className="rv-card-avatar" style={{ background: gradient }}>
           {initial}
         </div>
         <div>
@@ -695,13 +670,11 @@ function ReviewCard({ review, delay }: { review: Review; delay: number }) {
         </div>
       </div>
 
-      
       <div className="rv-card-accent" />
     </div>
   );
 }
 
-/* ─── REVIEWS SECTION ────────────────────────────── */
 function ReviewsSection() {
   const titleRef = useSlideIn("left", 0);
 
@@ -712,15 +685,23 @@ function ReviewsSection() {
           <span className="rv-eyebrow">Testimonials</span>
           <h2 className="rv-section-title">
             Trusted by Businesses{" "}
-            <span style={{ color: "#1A56DB" }}>Across Indonesia</span>
+            <span
+              style={{
+                background: "linear-gradient(90deg, #60A5FA, #34D399)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              Across Batam
+            </span>
           </h2>
           <p className="rv-section-sub">
-            From healthcare to retail, logistics to F&B — Geomarketia is
-            powering smarter location decisions for businesses everywhere.
+            From healthcare to retail, logistics to F&B. Geomarketia is powering
+            smarter location decisions for businesses everywhere.
           </p>
         </div>
 
-        
         <div className="rv-grid">
           {reviews.map((review, i) => (
             <ReviewCard key={review.id} review={review} delay={i * 0.1} />
@@ -731,17 +712,15 @@ function ReviewsSection() {
   );
 }
 
-/* ─── PAGE ROOT ──────────────────────────────────── */
 export default function ReviewPage() {
   return (
     <>
-      <Navbar />
-
+    
       <main>
         <HeroReview />
         <ReviewsSection />
-        <ContactSection />   
-        <CTASection /> 
+        <ContactSection />
+        <CTASection />
       </main>
 
       <style>{`
@@ -829,7 +808,7 @@ export default function ReviewPage() {
           font-family: 'Inter', sans-serif;
           font-size: clamp(26px, 3vw, 38px);
           font-weight: 800;
-          color: #0F1F5C;
+          color: #1A56DB;
           letter-spacing: -0.03em;
           margin-bottom: 14px;
           line-height: 1.15;

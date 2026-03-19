@@ -1536,7 +1536,7 @@ const slides = [
   },
   {
     title: "AI Market Solutions",
-    desc: "Transform complex geospatial data into actionable insights with AI-driven market analysis.",
+    desc: "Transform complex geospatial data into actionable insights with AI driven market analysis.",
     illustration: <IlloAIMarketSolutions />,
   },
 ];
@@ -1598,40 +1598,6 @@ function SolutionRow({
       className="gm-sol-row"
     >
       <div ref={textSlide.ref} style={{ ...textSlide.style, direction: "ltr" }}>
-        <div
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 8,
-            background: "#EFF6FF",
-            border: "1px solid #BFDBFE",
-            borderRadius: 8,
-            padding: "5px 14px",
-            marginBottom: 18,
-          }}
-        >
-          <span
-            style={{
-              width: 6,
-              height: 6,
-              borderRadius: "50%",
-              background: "#1A56DB",
-              display: "inline-block",
-            }}
-          />
-          <span
-            style={{
-              fontFamily: "'Sora',sans-serif",
-              fontSize: 11,
-              fontWeight: 600,
-              color: "#1A56DB",
-              letterSpacing: "0.05em",
-              textTransform: "uppercase",
-            }}
-          >
-            {item.title}
-          </span>
-        </div>
         <h3
           style={{
             fontFamily: "'Sora',sans-serif",
@@ -1719,7 +1685,7 @@ function SolutionsSlider() {
                 textTransform: "uppercase",
               }}
             >
-              What We Offer
+              Our Products
             </span>
           </div>
           <h2
@@ -1741,9 +1707,9 @@ function SolutionsSlider() {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Geospatial
+              Geomarketia
             </span>{" "}
-            Solutions
+            Products
           </h2>
           <p
             style={{
@@ -1754,12 +1720,294 @@ function SolutionsSlider() {
               maxWidth: 520,
             }}
           >
-            Four powerful tools built around how businesses actually make
-            location and market decisions.
+            A suite of four powerful geospatial tools for location and market insights.
           </p>
         </div>
 
         {slides.map((item, i) => (
+          <SolutionRow key={i} item={item} index={i} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function IlloDataEnrichment() {
+  return (
+    <svg
+      width="100%"
+      viewBox="0 0 460 320"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="460" height="320" rx="16" fill="#F0F7FF" />
+      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
+        <line key={`v${i}`} x1={i * 46} y1="0" x2={i * 46} y2="320" stroke="#BFDBFE" strokeWidth="0.6" />
+      ))}
+      {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+        <line key={`h${i}`} x1="0" y1={i * 53} x2="460" y2={i * 53} stroke="#BFDBFE" strokeWidth="0.6" />
+      ))}
+
+      {[
+        { y: 200, color: "#1A56DB", opacity: 0.18, label: "Raw Dataset" },
+        { y: 170, color: "#1A56DB", opacity: 0.35, label: "Cleaned Layer" },
+        { y: 140, color: "#1A56DB", opacity: 0.6,  label: "Enriched Layer" },
+        { y: 110, color: "#34D399", opacity: 0.85, label: "Intelligence Layer" },
+      ].map(({ y, color, opacity, label }, i) => (
+        <g key={i}>
+          <rect x="60" y={y} width="220" height="34" rx="6" fill={color} opacity={opacity} />
+          <text x="76" y={y + 22} fontSize="9.5" fontWeight="600" fill={i === 3 ? "#fff" : "#1A56DB"} fontFamily="sans-serif" opacity={i === 3 ? 1 : 0.9}>{label}</text>
+          {[0, 1, 2, 3, 4].map((j) => (
+            <rect key={j} x={200 + j * 12} y={y + 10} width="8" height={8 + j * 2} rx="2" fill={color} opacity={Math.min(1, opacity + 0.3)} />
+          ))}
+        </g>
+      ))}
+
+      <path d="M295 235 L295 108" stroke="#1A56DB" strokeWidth="1.5" strokeDasharray="5 3" opacity="0.4" markerEnd="url(#arrowUp)" />
+      <defs>
+        <marker id="arrowUp" markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto">
+          <path d="M0 6 L3 0 L6 6" fill="none" stroke="#1A56DB" strokeWidth="1.2" />
+        </marker>
+      </defs>
+
+      <rect x="316" y="60" width="130" height="200" rx="12" fill="white" stroke="#BFDBFE" strokeWidth="1" />
+      <text x="328" y="82" fontSize="9.5" fontWeight="700" fill="#1A56DB" fontFamily="sans-serif">Data Providers</text>
+      {[
+        { label: "OpenStreetMap", color: "#34D399" },
+        { label: "Google Places",  color: "#FBBF24" },
+        { label: "Satellite Imagery", color: "#60A5FA" },
+        { label: "Census Bureau",    color: "#8B5CF6" },
+        { label: "Social Signals",   color: "#F97316" },
+      ].map(({ label, color }, i) => (
+        <g key={i}>
+          <rect x="328" y={96 + i * 30} width="106" height="22" rx="6" fill={color} opacity="0.12" stroke={color} strokeWidth="0.8" strokeOpacity="0.5" />
+          <circle cx="340" cy={96 + i * 30 + 11} r="4" fill={color} opacity="0.85" />
+          <text x="350" y={96 + i * 30 + 15} fontSize="8.5" fill="#374151" fontFamily="sans-serif">{label}</text>
+        </g>
+      ))}
+
+      <rect x="60" y="256" width="200" height="46" rx="10" fill="white" stroke="#BFDBFE" strokeWidth="1" />
+      <text x="76" y="274" fontSize="9" fontWeight="600" fill="#6b7280" letterSpacing="0.06em" fontFamily="sans-serif">ACCURACY IMPROVEMENT</text>
+      <text x="76" y="293" fontSize="20" fontWeight="700" fill="#1A56DB" fontFamily="sans-serif">+34.8%</text>
+      <text x="160" y="293" fontSize="9" fill="#34D399" fontWeight="600" fontFamily="sans-serif">↑ vs raw data</text>
+    </svg>
+  );
+}
+
+function IlloAnalyticalReports() {
+  return (
+    <svg
+      width="100%"
+      viewBox="0 0 460 320"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="460" height="320" rx="16" fill="#F0F7FF" />
+      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
+        <line key={`v${i}`} x1={i * 46} y1="0" x2={i * 46} y2="320" stroke="#BFDBFE" strokeWidth="0.6" />
+      ))}
+      {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+        <line key={`h${i}`} x1="0" y1={i * 53} x2="460" y2={i * 53} stroke="#BFDBFE" strokeWidth="0.6" />
+      ))}
+
+      <rect x="30" y="30" width="200" height="260" rx="12" fill="white" stroke="#BFDBFE" strokeWidth="1" />
+      <rect x="30" y="30" width="200" height="44" rx="12" fill="#1A56DB" />
+      <rect x="30" y="62" width="200" height="12" rx="0" fill="#1A56DB" />
+      <text x="44" y="57" fontSize="11" fontWeight="700" fill="white" fontFamily="sans-serif">Geospatial Report</text>
+      <text x="44" y="70" fontSize="7.5" fill="rgba(255,255,255,0.6)" fontFamily="sans-serif">Q2 · 2025 · Market Analysis</text>
+
+      <polyline points="44,130 70,118 96,124 122,108 148,115 174,100 200,105 216,112" stroke="#1A56DB" strokeWidth="1.8" fill="none" strokeLinejoin="round" />
+      <polyline points="44,150 70,148 96,155 122,140 148,145 174,135 200,142 216,138" stroke="#34D399" strokeWidth="1.4" fill="none" strokeLinejoin="round" opacity="0.75" />
+      <line x1="44" y1="90" x2="216" y2="90" stroke="#E5E7EB" strokeWidth="0.7" />
+      <line x1="44" y1="110" x2="216" y2="110" stroke="#E5E7EB" strokeWidth="0.7" />
+      <line x1="44" y1="130" x2="216" y2="130" stroke="#E5E7EB" strokeWidth="0.7" />
+      <line x1="44" y1="150" x2="216" y2="150" stroke="#E5E7EB" strokeWidth="0.7" />
+
+      {[170, 184, 198, 212, 226].map((y, i) => (
+        <rect key={i} x="44" y={y} width={i % 2 === 0 ? 150 : 120} height="6" rx="3" fill="#E5E7EB" />
+      ))}
+      <rect x="44" y="248" width="164" height="26" rx="6" fill="#1A56DB" opacity="0.1" stroke="#1A56DB" strokeWidth="0.8" strokeOpacity="0.4" />
+      <text x="56" y="265" fontSize="8.5" fill="#1A56DB" fontWeight="600" fontFamily="sans-serif">Download Full Report →</text>
+
+      {[
+        { y: 30,  val: "94.2", label: "Location Score",  color: "#1A56DB", border: "#BFDBFE" },
+        { y: 108, val: "↑18%", label: "Market Growth",   color: "#34D399", border: "#A7F3D0" },
+        { y: 186, val: "12",   label: "Insights Found",  color: "#FBBF24", border: "#FDE68A" },
+        { y: 264, val: "3.2x", label: "ROI Projection",  color: "#8B5CF6", border: "#DDD6FE" },
+      ].map(({ y, val, label, color, border }) => (
+        <g key={label}>
+          <rect x="256" y={y} width="180" height="70" rx="10" fill="white" stroke={border} strokeWidth="1" />
+          <text x="272" y={y + 24} fontSize="22" fontWeight="700" fill={color} fontFamily="sans-serif">{val}</text>
+          <text x="272" y={y + 42} fontSize="8.5" fill="#6b7280" fontFamily="sans-serif">{label}</text>
+          <rect x="272" y={y + 52} width={130} height="5" rx="3" fill={color} opacity="0.15" />
+          <rect x="272" y={y + 52} width={90} height="5" rx="3" fill={color} opacity="0.7" />
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+function IlloCustomSolutions() {
+  return (
+    <svg
+      width="100%"
+      viewBox="0 0 460 320"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="460" height="320" rx="16" fill="#F0F7FF" />
+      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
+        <line key={`v${i}`} x1={i * 46} y1="0" x2={i * 46} y2="320" stroke="#BFDBFE" strokeWidth="0.6" />
+      ))}
+      {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+        <line key={`h${i}`} x1="0" y1={i * 53} x2="460" y2={i * 53} stroke="#BFDBFE" strokeWidth="0.6" />
+      ))}
+
+      <circle cx="230" cy="160" r="42" fill="#1A56DB" opacity="0.09" stroke="#1A56DB" strokeWidth="1.5" strokeDasharray="6 3" />
+      <circle cx="230" cy="160" r="26" fill="#1A56DB" opacity="0.85" />
+      <circle cx="230" cy="160" r="16" fill="white" opacity="0.95" />
+      <text x="230" y="165" fontSize="10" fontWeight="700" fill="#1A56DB" textAnchor="middle" fontFamily="sans-serif">GEO</text>
+
+      {[
+        { cx: 100, cy: 72,  color: "#60A5FA",  label: "Location\nStrategy" },
+        { cx: 358, cy: 72,  color: "#34D399",  label: "Market\nExpansion" },
+        { cx: 68,  cy: 220, color: "#FBBF24",  label: "Site\nSelection" },
+        { cx: 392, cy: 220, color: "#8B5CF6",  label: "Territory\nMapping" },
+        { cx: 230, cy: 38,  color: "#F97316",  label: "Custom\nAPI" },
+        { cx: 230, cy: 282, color: "#EF4444",  label: "Dashboard\nIntegration" },
+      ].map(({ cx, cy, color, label }, i) => (
+        <g key={i}>
+          <line x1={cx} y1={cy} x2="230" y2="160" stroke={color} strokeWidth="1.2" strokeDasharray="5 3" opacity="0.45" />
+          <circle cx={cx} cy={cy} r="22" fill={color} opacity="0.1" stroke={color} strokeWidth="1" strokeOpacity="0.6" />
+          <circle cx={cx} cy={cy} r="13" fill={color} opacity="0.82" />
+          <circle cx={cx} cy={cy} r="7" fill="white" opacity="0.9" />
+          {label.split("\n").map((line, li) => (
+            <text key={li} x={cx} y={cy + 30 + li * 10} fontSize="7.5" fill="#374151" textAnchor="middle" fontFamily="sans-serif" fontWeight="600">{line}</text>
+          ))}
+        </g>
+      ))}
+
+      <rect x="296" y="108" width="150" height="100" rx="10" fill="white" stroke="#BFDBFE" strokeWidth="1" />
+      <text x="310" y="128" fontSize="9.5" fontWeight="700" fill="#1A56DB" fontFamily="sans-serif">Solution Progress</text>
+      {[
+        { label: "Discovery",   pct: 100, color: "#34D399" },
+        { label: "Build",       pct: 75,  color: "#1A56DB" },
+        { label: "Calibration", pct: 50,  color: "#FBBF24" },
+        { label: "Deploy",      pct: 25,  color: "#8B5CF6" },
+      ].map(({ label, pct, color }, i) => (
+        <g key={label}>
+          <text x="310" y={145 + i * 18} fontSize="7.5" fill="#6b7280" fontFamily="sans-serif">{label}</text>
+          <rect x="370" y={136 + i * 18} width="62" height="6" rx="3" fill={color} opacity="0.12" />
+          <rect x="370" y={136 + i * 18} width={62 * pct / 100} height="6" rx="3" fill={color} opacity="0.85" />
+          <text x="436" y={143 + i * 18} fontSize="7" fill={color} fontWeight="700" fontFamily="sans-serif">{pct}%</text>
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+const services = [
+  {
+    title: "Data Enrichment",
+    desc: "Enhance your analysis with enriched geospatial datasets sourced from multiple data providers and advanced processing. Improve accuracy, uncover hidden patterns, and gain deeper insights into your market landscape.",
+    illustration: <IlloDataEnrichment />,
+  },
+  {
+    title: "Analytical Reports",
+    desc: "Turn complex location and market data into clear, actionable insights through comprehensive geospatial reports. Each report integrates spatial analysis, market trends, and strategic recommendations to support business growth.",
+    illustration: <IlloAnalyticalReports />,
+  },
+  {
+    title: "Custom Geospatial Solutions",
+    desc: "Build tailored geospatial solutions designed specifically for your business objectives. From location strategy to market expansion, our customized approach helps you optimize performance and unlock new opportunities.",
+    illustration: <IlloCustomSolutions />,
+  },
+];
+
+function GeomarketiaServicesSection() {
+  return (
+    <section
+      id="services"
+      style={{
+        width: "100%",
+        background: "#F8FAFF",
+        padding: "6rem 0 3rem",
+        overflow: "hidden",
+      }}
+    >
+      <div style={{ maxWidth: 1160, margin: "0 auto", padding: "0 3.5rem" }}>
+        <div style={{ marginBottom: "4rem" }}>
+          <div
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              background: "#EFF6FF",
+              border: "1px solid #BFDBFE",
+              borderRadius: 100,
+              padding: "5px 14px",
+              marginBottom: 18,
+            }}
+          >
+            <span
+              style={{
+                width: 6,
+                height: 6,
+                borderRadius: "50%",
+                background: "#1A56DB",
+                display: "inline-block",
+              }}
+            />
+            <span
+              style={{
+                fontFamily: "'Sora',sans-serif",
+                fontSize: 11,
+                fontWeight: 600,
+                color: "#1A56DB",
+                letterSpacing: "0.06em",
+                textTransform: "uppercase",
+              }}
+            >
+              Our Services
+            </span>
+          </div>
+          <h2
+            style={{
+              fontFamily: "'Sora',sans-serif",
+              fontWeight: 700,
+              fontSize: "clamp(1.9rem, 3vw, 2.8rem)",
+              color: "#1A56DB",
+              letterSpacing: "-0.03em",
+              lineHeight: 1.15,
+              marginBottom: 14,
+            }}
+          >
+            Our{" "}
+            <span
+              style={{
+                background: "linear-gradient(90deg, #60A5FA, #34D399)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Geomarketia
+            </span>{" "}
+            Services
+          </h2>
+          <p
+            style={{
+              fontFamily: "'Sora',sans-serif",
+              fontSize: "0.95rem",
+              color: "#6b7280",
+              lineHeight: 1.75,
+              maxWidth: 560,
+            }}
+          >
+            Tailored geospatial solutions powered by data, insights, and AI for smarter business decisions.
+          </p>
+        </div>
+
+        {services.map((item, i) => (
           <SolutionRow key={i} item={item} index={i} />
         ))}
       </div>
@@ -1949,7 +2197,7 @@ export default function ProductsPage() {
             >
               Geomarketia provides a suite of geospatial intelligence products
               and services designed to help businesses analyze market potential,
-              identify strategic locations, and make data-driven decisions with
+              identify strategic locations, and make data driven decisions with
               greater accuracy and confidence.
             </p>
           </div>
@@ -1961,6 +2209,8 @@ export default function ProductsPage() {
 
       <SolutionsSlider />
 
+      <GeomarketiaServicesSection />
+      
       <ContactSection />
 
       <CTASection />

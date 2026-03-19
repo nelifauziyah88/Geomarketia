@@ -14,7 +14,7 @@ const solutions: Solution[] = [
     icon: "🏪",
     title: "Retail",
     desc: "Identify optimal store locations and analyze retail market trends.",
-    href: "/solutions/retail",
+    href: "/about/retail",
   },
   {
     icon: "🍽️",
