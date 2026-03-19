@@ -20,13 +20,13 @@ const solutions: Solution[] = [
     icon: "🍽️",
     title: "Food & Beverage",
     desc: "Analyze and find strategic locations for F&B businesses.",
-    href: "/solutions/fnb",
+    href: "/about/fnb",
   },
   {
     icon: "🏥",
     title: "Healthcare",
     desc: "Optimize locations for clinics, hospitals, and healthcare services.",
-    href: "/solutions/healthcare",
+    href: "/about/healthcare",
   },
 ];
 
