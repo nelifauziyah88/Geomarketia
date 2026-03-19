@@ -199,7 +199,7 @@ function HeroVisual() {
         <Stars count={5} />
         <p
           style={{
-            fontFamily: "'DM Sans',sans-serif",
+            fontFamily: "'',sans-serif",
             fontSize: 12.5,
             color: "rgba(255,255,255,0.65)",
             lineHeight: 1.7,
@@ -577,7 +577,7 @@ function HeroReview() {
 
             <p
               style={{
-                fontFamily: "'DM Sans',sans-serif",
+                fontFamily: "'',sans-serif",
                 fontSize: 16,
                 color: "rgba(255,255,255,0.55)",
                 lineHeight: 1.78,
@@ -724,7 +724,7 @@ export default function ReviewPage() {
       </main>
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@400;500&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         /* ── SHARED ─────────────────────── */
@@ -774,7 +774,7 @@ export default function ReviewPage() {
           line-height: 1;
         }
         .rv-hero-stat-label {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 11px;
           color: rgba(255,255,255,0.4);
           line-height: 1.4;
@@ -814,7 +814,7 @@ export default function ReviewPage() {
           line-height: 1.15;
         }
         .rv-section-sub {
-          font-family: 'DM Sans', sans-serif;
+          font-family: '', sans-serif;
           font-size: 16px;
           color: #64748b;
           line-height: 1.72;
@@ -873,7 +873,7 @@ export default function ReviewPage() {
           align-self: flex-start;
         }
         .rv-card-text {
-          font-family: 'DM Sans', sans-serif;
+          font-family: '', sans-serif;
           font-size: 14px;
           color: #475569;
           line-height: 1.75;
@@ -907,7 +907,7 @@ export default function ReviewPage() {
           color: #1A56DB;
         }
         .rv-card-role {
-          font-family: 'DM Sans', sans-serif;
+          font-family: '', sans-serif;
           font-size: 11px;
           color: #94A3B8;
           margin-top: 1px;

@@ -290,7 +290,7 @@ function ProductVisual() {
             fontSize: 9,
             fontWeight: 700,
             color: "white",
-            fontFamily: "'Sora', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             letterSpacing: "0.04em",
             zIndex: 5,
             whiteSpace: "nowrap",
@@ -336,7 +336,7 @@ function ProductVisual() {
                 style={{
                   fontSize: 8.5,
                   color: "rgba(255,255,255,0.5)",
-                  fontFamily: "'Sora', sans-serif",
+                  fontFamily: "'Inter', sans-serif",
                   fontWeight: 500,
                   whiteSpace: "nowrap",
                 }}
@@ -371,7 +371,7 @@ function ProductVisual() {
             letterSpacing: "0.07em",
             textTransform: "uppercase",
             marginBottom: 5,
-            fontFamily: "'Sora', sans-serif",
+            fontFamily: "'Inter', sans-serif",
           }}
         >
           Location Score
@@ -382,7 +382,7 @@ function ProductVisual() {
             fontWeight: 700,
             color: "#60A5FA",
             letterSpacing: "-0.03em",
-            fontFamily: "'Sora', sans-serif",
+            fontFamily: "'Inter', sans-serif",
             lineHeight: 1,
             marginBottom: 8,
           }}
@@ -440,7 +440,7 @@ function ProductVisual() {
             letterSpacing: "0.07em",
             textTransform: "uppercase",
             marginBottom: 8,
-            fontFamily: "'Sora', sans-serif",
+            fontFamily: "'Inter', sans-serif",
           }}
         >
           Market Growth
@@ -472,7 +472,7 @@ function ProductVisual() {
             fontSize: 10,
             color: "#34D399",
             fontWeight: 600,
-            fontFamily: "'Sora', sans-serif",
+            fontFamily: "'Inter', sans-serif",
           }}
         >
           ↑ 18.4% YoY
@@ -502,7 +502,7 @@ function ProductVisual() {
             letterSpacing: "0.07em",
             textTransform: "uppercase",
             marginBottom: 9,
-            fontFamily: "'Sora', sans-serif",
+            fontFamily: "'Inter', sans-serif",
           }}
         >
           Competitor Analysis
@@ -524,7 +524,7 @@ function ProductVisual() {
                 style={{
                   fontSize: 8.5,
                   color: "rgba(255,255,255,0.48)",
-                  fontFamily: "'Sora',sans-serif",
+                  fontFamily: "'Inter',sans-serif",
                 }}
               >
                 {label}
@@ -534,7 +534,7 @@ function ProductVisual() {
                   fontSize: 8.5,
                   color,
                   fontWeight: 600,
-                  fontFamily: "'Sora',sans-serif",
+                  fontFamily: "'Inter',sans-serif",
                 }}
               >
                 {pct}%
@@ -618,7 +618,7 @@ function ProductVisual() {
               fontWeight: 600,
               letterSpacing: "0.06em",
               textTransform: "uppercase",
-              fontFamily: "'Sora', sans-serif",
+              fontFamily: "'Inter', sans-serif",
             }}
           >
             AI Insight
@@ -628,7 +628,7 @@ function ProductVisual() {
               fontSize: 11,
               color: "#A78BFA",
               fontWeight: 700,
-              fontFamily: "'Sora', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               marginTop: 2,
             }}
           >
@@ -1600,7 +1600,7 @@ function SolutionRow({
       <div ref={textSlide.ref} style={{ ...textSlide.style, direction: "ltr" }}>
         <h3
           style={{
-            fontFamily: "'Sora',sans-serif",
+            fontFamily: "'Inter',sans-serif",
             fontWeight: 700,
             fontSize: "clamp(1.4rem, 2.2vw, 1.9rem)",
             color: "#1A56DB",
@@ -1613,7 +1613,7 @@ function SolutionRow({
         </h3>
         <p
           style={{
-            fontFamily: "'Sora',sans-serif",
+            fontFamily: "'Inter',sans-serif",
             fontSize: "0.93rem",
             lineHeight: 1.8,
             color: "#64748b",
@@ -1677,7 +1677,7 @@ function SolutionsSlider() {
             />
             <span
               style={{
-                fontFamily: "'Sora',sans-serif",
+                fontFamily: "'Inter',sans-serif",
                 fontSize: 11,
                 fontWeight: 600,
                 color: "#1A56DB",
@@ -1690,7 +1690,7 @@ function SolutionsSlider() {
           </div>
           <h2
             style={{
-              fontFamily: "'Sora',sans-serif",
+              fontFamily: "'Inter',sans-serif",
               fontWeight: 700,
               fontSize: "clamp(1.9rem, 3vw, 2.8rem)",
               color: "#1A56DB",
@@ -1713,7 +1713,7 @@ function SolutionsSlider() {
           </h2>
           <p
             style={{
-              fontFamily: "'Sora',sans-serif",
+              fontFamily: "'Inter',sans-serif",
               fontSize: "0.95rem",
               color: "#6b7280",
               lineHeight: 1.75,
@@ -1960,7 +1960,7 @@ function GeomarketiaServicesSection() {
             />
             <span
               style={{
-                fontFamily: "'Sora',sans-serif",
+                fontFamily: "'Inter',sans-serif",
                 fontSize: 11,
                 fontWeight: 600,
                 color: "#1A56DB",
@@ -1973,7 +1973,7 @@ function GeomarketiaServicesSection() {
           </div>
           <h2
             style={{
-              fontFamily: "'Sora',sans-serif",
+              fontFamily: "'Inter',sans-serif",
               fontWeight: 700,
               fontSize: "clamp(1.9rem, 3vw, 2.8rem)",
               color: "#1A56DB",
@@ -1996,7 +1996,7 @@ function GeomarketiaServicesSection() {
           </h2>
           <p
             style={{
-              fontFamily: "'Sora',sans-serif",
+              fontFamily: "'Inter',sans-serif",
               fontSize: "0.95rem",
               color: "#6b7280",
               lineHeight: 1.75,
@@ -2019,7 +2019,7 @@ export default function ProductsPage() {
   return (
     <main
       style={{
-        fontFamily: "'Sora', system-ui, sans-serif",
+        fontFamily: "'Inter', system-ui, sans-serif",
         overflowX: "hidden",
       }}
     >
@@ -2150,7 +2150,7 @@ export default function ProductsPage() {
               />
               <span
                 style={{
-                  fontFamily: "'Sora',system-ui,sans-serif",
+                  fontFamily: "'Inter',system-ui,sans-serif",
                   fontSize: 11,
                   fontWeight: 600,
                   color: "#93C5FD",
@@ -2163,7 +2163,7 @@ export default function ProductsPage() {
             </div>
             <h1
               style={{
-                fontFamily: "'Sora',system-ui,sans-serif",
+                fontFamily: "'Inter',system-ui,sans-serif",
                 fontWeight: 700,
                 fontSize: "clamp(2rem,3.4vw,3.4rem)",
                 lineHeight: 1.1,
@@ -2187,7 +2187,7 @@ export default function ProductsPage() {
             </h1>
             <p
               style={{
-                fontFamily: "'Sora',system-ui,sans-serif",
+                fontFamily: "'Inter',system-ui,sans-serif",
                 fontSize: "0.95rem",
                 lineHeight: 1.78,
                 color: "rgba(255,255,255,0.55)",
@@ -2216,7 +2216,7 @@ export default function ProductsPage() {
       <CTASection />
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
         @keyframes gmFloat  { 0%,100%{transform:translateY(0)}   50%{transform:translateY(-10px)} }
         @keyframes gmPulse  { 0%{transform:scale(0.8);opacity:1} 100%{transform:scale(2.2);opacity:0} }

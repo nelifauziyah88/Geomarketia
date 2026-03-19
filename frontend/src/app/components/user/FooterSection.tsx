@@ -2,9 +2,6 @@
 
 import Link from "next/link";
 
-/* ─────────────────────────────────────────
-   CUBE LOGO ICON (reused from Navbar)
-───────────────────────────────────────── */
 function CubeIcon({ size = 32 }: { size?: number }) {
   const id = `ft-cube-${size}`;
   return (
@@ -32,9 +29,6 @@ function CubeIcon({ size = 32 }: { size?: number }) {
   );
 }
 
-/* ─────────────────────────────────────────
-   MAP VISUAL (top-right decoration)
-───────────────────────────────────────── */
 function MapVisual() {
   return (
     <svg
@@ -45,7 +39,6 @@ function MapVisual() {
       opacity="0.85"
       style={{ animation: "gmFadeUp 1s 0.3s ease both" }}
     >
-      {/* platform */}
       <path
         d="M40 100 L140 60 L240 100 L240 140 L140 180 L40 140Z"
         fill="rgba(37,99,235,0.18)"
@@ -60,7 +53,6 @@ function MapVisual() {
         d="M240 100 L140 140 L140 180 L240 140Z"
         fill="rgba(37,99,235,0.2)"
       />
-      {/* tile lines */}
       <line
         x1="40"
         y1="100"
@@ -101,7 +93,6 @@ function MapVisual() {
         stroke="rgba(147,197,253,0.2)"
         strokeWidth="1"
       />
-      {/* pins */}
       <path
         d="M140 50 C133 50 128 55 128 62 C128 71 140 83 140 83 C140 83 152 71 152 62 C152 55 147 50 140 50Z"
         fill="#2563EB"
@@ -117,7 +108,6 @@ function MapVisual() {
         fill="#16A34A"
       />
       <circle cx="185" cy="80" r="4" fill="white" opacity="0.85" />
-      {/* bar charts */}
       <rect
         x="200"
         y="28"
@@ -141,9 +131,6 @@ function MapVisual() {
   );
 }
 
-/* ─────────────────────────────────────────
-   SOCIAL BUTTON
-───────────────────────────────────────── */
 function SocialBtn({
   href,
   label,
@@ -192,9 +179,6 @@ function SocialBtn({
   );
 }
 
-/* ─────────────────────────────────────────
-   FOOTER LINK
-───────────────────────────────────────── */
 function FootLink({
   href,
   children,
@@ -237,9 +221,6 @@ function FootLink({
   );
 }
 
-/* ─────────────────────────────────────────
-   FOOTER
-───────────────────────────────────────── */
 export default function Footer() {
   return (
     <footer
@@ -251,7 +232,6 @@ export default function Footer() {
         fontFamily: "'Inter', system-ui, sans-serif",
       }}
     >
-      {/* ── Dot grid ── */}
       <div
         style={{
           position: "absolute",
@@ -263,7 +243,6 @@ export default function Footer() {
         }}
       />
 
-      {/* ── Radial glows ── */}
       <div
         style={{
           position: "absolute",
@@ -291,7 +270,6 @@ export default function Footer() {
         }}
       />
 
-      {/* ── Connection lines SVG ── */}
       <svg
         style={{
           position: "absolute",
@@ -381,9 +359,6 @@ export default function Footer() {
         ))}
       </svg>
 
-      {/* ══════════════════════════════════
-          TOP BAND — logo + tagline | map
-      ══════════════════════════════════ */}
       <div
         className="gm-footer-top"
         style={{
@@ -397,9 +372,7 @@ export default function Footer() {
           borderBottom: "1px solid rgba(255,255,255,0.08)",
         }}
       >
-        {/* Left */}
         <div style={{ animation: "gmFadeUp 0.8s ease both" }}>
-          {/* Logo */}
           <Link
             href="/"
             style={{
@@ -429,7 +402,6 @@ export default function Footer() {
             </span>
           </Link>
 
-          {/* Tagline */}
           <h2
             style={{
               fontWeight: 700,
@@ -472,7 +444,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Right: map illustration */}
         <div
           style={{
             display: "flex",
@@ -484,9 +455,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* ══════════════════════════════════
-          BOTTOM GRID — address | links | social
-      ══════════════════════════════════ */}
       <div
         className="gm-footer-grid"
         style={{
@@ -498,7 +466,6 @@ export default function Footer() {
           alignItems: "start",
         }}
       >
-        {/* Address */}
         <div style={{ paddingRight: "2.5rem" }}>
           <div
             style={{
@@ -546,7 +513,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Vertical divider */}
         <div
           style={{
             background: "rgba(255,255,255,0.1)",
@@ -555,7 +521,6 @@ export default function Footer() {
           }}
         />
 
-        {/* Quick Links */}
         <div style={{ padding: "0 2.5rem" }}>
           <div
             style={{
@@ -576,7 +541,6 @@ export default function Footer() {
           <FootLink href="/contact">Contact</FootLink>
         </div>
 
-        {/* Legal */}
         <div style={{ padding: "0 2.5rem" }}>
           <div
             style={{
@@ -594,7 +558,6 @@ export default function Footer() {
           <FootLink href="/privacy">Privacy Policy</FootLink>
         </div>
 
-        {/* Social */}
         <div>
           <div
             style={{
@@ -609,7 +572,6 @@ export default function Footer() {
             Follow Us
           </div>
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-            {/* YouTube */}
             <SocialBtn
               href="https://youtube.com"
               label="YouTube"
@@ -621,7 +583,6 @@ export default function Footer() {
               </svg>
             </SocialBtn>
 
-            {/* Instagram */}
             <SocialBtn
               href="https://instagram.com"
               label="Instagram"
@@ -642,7 +603,6 @@ export default function Footer() {
               </svg>
             </SocialBtn>
 
-            {/* WhatsApp */}
             <SocialBtn
               href="https://wa.me/62XXXXXXXXXX"
               label="WhatsApp"
@@ -654,7 +614,6 @@ export default function Footer() {
               </svg>
             </SocialBtn>
 
-            {/* Email */}
             <SocialBtn
               href="mailto:hello@geomarketia.id"
               label="Email"
@@ -677,9 +636,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* ══════════════════════════════════
-          BOTTOM BAR — legal | copyright
-      ══════════════════════════════════ */}
       <div
         className="gm-footer-bar"
         style={{
@@ -694,7 +650,6 @@ export default function Footer() {
           gap: "0.5rem",
         }}
       >
-        {/* Legal links */}
         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           {[
             { label: "Terms and Conditions", href: "/terms" },
@@ -737,7 +692,6 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Copyright */}
         <span style={{ fontSize: "0.78rem", color: "rgba(255,255,255,0.3)" }}>
           © 2024 Geomarketia. All rights reserved.
         </span>

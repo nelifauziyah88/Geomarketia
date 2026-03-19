@@ -458,7 +458,7 @@ function HeroContact() {
 
             <p
               style={{
-                fontFamily: "'DM Sans',sans-serif",
+                fontFamily: "'Inter',sans-serif",
                 fontSize: 16,
                 color: "rgba(255,255,255,0.55)",
                 lineHeight: 1.78,
@@ -646,7 +646,7 @@ export default function ContactPage() {
       </main>
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         .ct-container {
@@ -732,7 +732,7 @@ export default function ContactPage() {
           line-height: 1.15;
         }
         .ct-section-sub {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter',sans-serif;
           font-size: 16px;
           color: #64748b;
           line-height: 1.72;

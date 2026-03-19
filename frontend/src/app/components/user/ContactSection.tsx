@@ -112,7 +112,7 @@ export default function ContactSection() {
       </div>
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
         .contact-section {
           font-family: 'DM Sans', sans-serif;
@@ -182,7 +182,7 @@ export default function ContactSection() {
           gap: 7px;
           background: #eff6ff;
           color: #1A56DB;
-          font-family: 'Sora', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 11.5px;
           font-weight: 600;
           letter-spacing: 0.06em;

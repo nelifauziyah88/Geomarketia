@@ -30,7 +30,7 @@ export default function CtaSection() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
         .cta-section {
           background: linear-gradient(135deg, #0a1628 0%, #0f2460 50%, #1A56DB 100%);
@@ -102,7 +102,7 @@ export default function CtaSection() {
           line-height: 1.12;
         }
         .cta-sub {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 16px;
           color: rgba(255,255,255,0.6);
           line-height: 1.75;

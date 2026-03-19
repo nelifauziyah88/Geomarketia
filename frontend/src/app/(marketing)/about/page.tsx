@@ -142,7 +142,7 @@ function HeroAbout() {
               Where Data Meets{" "}
               <span style={{ background:"linear-gradient(90deg,#60A5FA,#34D399)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", backgroundClip:"text" }}>Smarter Business Decisions</span>
             </h1>
-            <p style={{ fontFamily:"'DM Sans',sans-serif", fontSize:16, color:"rgba(255,255,255,0.55)", lineHeight:1.78, maxWidth:460, marginBottom:34 }}>
+            <p style={{ fontFamily:"'Inter',sans-serif", fontSize:16, color:"rgba(255,255,255,0.55)", lineHeight:1.78, maxWidth:460, marginBottom:34 }}>
               Geomarketia is a geospatial platform that helps you analyze location potential through data and visualization, turning insights into confident decisions.
             </p>
           </div>
@@ -406,7 +406,7 @@ export default function AboutPage() {
       <CTASection/>
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
 
         /* ── HERO ──────────────────────── */
@@ -488,7 +488,7 @@ export default function AboutPage() {
 
         /* vision text */
         .vm-vision-text {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 17px;
           line-height: 1.82;
           color: #334155;
@@ -516,7 +516,7 @@ export default function AboutPage() {
           margin-top: 2px;
         }
         .vm-list-text {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 16px;
           color: #334155;
           line-height: 1.72;
@@ -534,7 +534,7 @@ export default function AboutPage() {
         .wd-header { text-align:center; margin-bottom:60px; }
         .wd-eyebrow { display:inline-block; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; color:#1A56DB; text-transform:uppercase; letter-spacing:0.1em; background:#EFF6FF; border:1px solid #BFDBFE; padding:5px 14px; border-radius:100px; margin-bottom:16px; }
         .wd-title { font-family:'Inter',sans-serif; font-size:clamp(26px,3vw,38px); font-weight:800; color:#1A56DB; letter-spacing:-0.03em; margin-bottom:14px; line-height:1.15; }
-        .wd-sub { font-family:'DM Sans',sans-serif; font-size:16px; color:#64748b; line-height:1.72; max-width:540px; margin:0 auto; }
+        .wd-sub { font-family:'Inter',sans-serif; font-size:16px; color:#64748b; line-height:1.72; max-width:540px; margin:0 auto; }
         .wd-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
         .wd-card { background:#ffffff; border:1px solid #E2EEFF; border-radius:20px; padding:28px 24px 24px; display:flex; flex-direction:column; gap:10px; position:relative; overflow:hidden; transition:border-color .25s,box-shadow .25s,transform .25s; cursor:default; }
         .wd-card::after { content:''; position:absolute; inset:0; background:linear-gradient(135deg,rgba(26,86,219,0.04) 0%,transparent 60%); opacity:0; transition:opacity .3s; border-radius:20px; }
@@ -543,7 +543,7 @@ export default function AboutPage() {
         .wd-card-icon-wrap { width:52px; height:52px; border-radius:14px; background:#EFF6FF; border:1px solid #BFDBFE; display:flex; align-items:center; justify-content:center; margin-bottom:4px; transition:background .25s,border-color .25s; }
         .wd-card:hover .wd-card-icon-wrap { background:#DBEAFE; border-color:#93C5FD; }
         .wd-card-title { font-family:'Inter',sans-serif; font-size:15px; font-weight:700; color:#1A56DB; letter-spacing:-0.01em; line-height:1.3; }
-        .wd-card-desc { font-family:'DM Sans',sans-serif; font-size:13.5px; color:#64748b; line-height:1.65; flex:1; }
+        .wd-card-desc { font-family:'Inter',sans-serif; font-size:13.5px; color:#64748b; line-height:1.65; flex:1; }
         .wd-card-arrow { opacity:0; transform:translateX(-6px); transition:opacity .25s,transform .25s; margin-top:4px; }
 
         /* ── WHY CHOOSE ────────────────────── */
@@ -574,7 +574,7 @@ export default function AboutPage() {
         .wc-card-icon { width:40px; height:40px; border-radius:12px; background:#EFF6FF; border:1px solid #BFDBFE; display:flex; align-items:center; justify-content:center; color:#1A56DB; transition:background .25s; flex-shrink:0; }
         .wc-card:hover .wc-card-icon { background:#DBEAFE; }
         .wc-card-title { font-family:'Inter',sans-serif; font-size:15px; font-weight:700; color:#1A56DB; letter-spacing:-0.01em; line-height:1.3; }
-        .wc-card-desc { font-family:'DM Sans',sans-serif; font-size:13.5px; color:#64748b; line-height:1.65; }
+        .wc-card-desc { font-family:'Inter',sans-serif; font-size:13.5px; color:#64748b; line-height:1.65; }
 
         /* responsive */
         @media (max-width:1024px) { .wd-grid, .wc-grid { grid-template-columns:repeat(2,1fr); } }
